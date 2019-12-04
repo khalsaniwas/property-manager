@@ -11,12 +11,26 @@ const Property = props => {
     axios({ url: `${apiUrl}/properties/${props.match.params.id}`,
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${props.user.token}`
+        Authorization: `Token token=${props.user.token}`
       }
     })
       .then(res => setProperty(res.data.property))
       .catch(console.error)
   }, [])
+
+  const handleUpdate = event => {
+    axios({
+      url: `${apiUrl}/properties/${props.match.params.id}`,
+      method: 'PATCH',
+      headers: {
+        'Authorization': `Bearer ${props.user.token}`
+      }
+    })
+      .then(() => {
+        props.alert({ heading: 'Success', message: 'property updated ', variant: 'warning' })
+        props.history.push('/properties')
+      })
+  }
 
   const handleDelete = event => {
     axios({
@@ -40,6 +54,7 @@ const Property = props => {
     <div>
       <h2>{property.name}</h2>
       {userId === property.owner && <button onClick={handleDelete}>Delete</button>}
+      {userId === property.owner && <button onClick={handleUpdate}>Update</button>}
     </div>
   )
 }

@@ -5,8 +5,6 @@ import Navbar from 'react-bootstrap/Navbar'
 const authenticatedOptions = (
   <Fragment>
     <Nav.Link href="#properties">Properties</Nav.Link>
-    <Nav.Link href="#update">Update</Nav.Link>
-    <Nav.Link href="#delete">Delete</Nav.Link>
     <Nav.Link href="#change-password">Change Password</Nav.Link>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
   </Fragment>
@@ -26,7 +24,15 @@ const alwaysOptions = (
 
 const Header = ({ user }) => (
   <Navbar bg="dark" variant="dark" expand="md">
-    <Navbar.Brand href="#home">Property manager</Navbar.Brand>
+    <Navbar.Brand href="#home">
+      <img
+        src="../Images/homeIcon2.jpg"
+        width="50"
+        height="50"
+        className="d-inline-block align-top"
+        alt="Property Manager"
+      />
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">

@@ -32,9 +32,11 @@ const Properties = props => {
   return (
     <div>
       <h1>Properties</h1>
-      <Link to="/create-property">Add Property</Link>
-      <ListGroup>
-        {propertiesJsx}
+      <Link to="/create-property"><button>Add New Property</button></Link>
+      <ListGroup variant="flush">
+        <ListGroup.Item action variant="info">
+          {propertiesJsx}
+        </ListGroup.Item>
       </ListGroup>
     </div>
   )

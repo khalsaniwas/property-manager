@@ -16,6 +16,7 @@ Git
 React
 Visual studio code
 Terminal
+Development tools
 
 
 
@@ -41,6 +42,6 @@ Terminal
 * [x] As a signed-in user, I should be able to create new property.
 * [x] As a signed-in user, I should be able to view a list of my properties.
 * [] As a signed-in user, I should be able to update my properties.
-* [] As a signed-in user, I should be able to delete my properties.
+* [x] As a signed-in user, I should be able to delete my properties.
 
 ## Set up and installation instructions
