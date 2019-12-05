@@ -53,6 +53,8 @@ const Property = props => {
   return (
     <div>
       <h2>{property.name}</h2>
+      <h6>{property.address}</h6>
+      <h6>{property.tenant_name}</h6>
       {userId === property.owner && <button onClick={handleDelete}>Delete</button>}
       {userId === property.owner && <button onClick={handleUpdate}>Update</button>}
     </div>
