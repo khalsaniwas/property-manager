@@ -29,14 +29,14 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
     />
     <label>Lease start date</label>
     <input
-      placeholder="Lease start date"
+      placeholder="MM-DD-YYYY"
       value={property.lease_start_date}
       name="Lease start date"
       onChange={handleChange}
     />
     <label>Lease end date</label>
     <input
-      placeholder="Lease end date"
+      placeholder="MM-DD-YYYY"
       value={property.lease_end_date}
       name="Lease end date"
       onChange={handleChange}
