@@ -25,7 +25,7 @@ const PropertyCreate = props => {
       data: { property }
     })
       .then(response =>
-        props.history.push(`properties/${response.data.property._id}`)
+        props.history.push(`properties/${response.data.property.id}`)
       )
       .catch(console.error)
   }
