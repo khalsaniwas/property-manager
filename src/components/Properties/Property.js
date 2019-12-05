@@ -38,14 +38,19 @@ const Property = props => {
 
   return (
     <div>
-      <h2>{property.name}</h2>
-      <h6>{property.address}</h6>
-      <h6>{property.tenant_name}</h6>
+      <h4>{property.name}</h4>
+      <h5>Address: {property.address}</h5>
+      <h5>Tenant name: {property.tenant_name}</h5>
+      <h5>Lease starts on: {property.lease_start_date}</h5>
+      <h5>Lease ends on: {property.lease_end_date}</h5>
+      <h5>Rent: ${property.rent}.00</h5>
       {userId === property.owner && <button onClick={handleDelete}>Delete</button>}
       <Link to={`/properties/${props.match.params.id}/edit`}>
         <button>Update</button>
       </Link>
-      <Link to="/properties/"><button></button></Link>
+      <Link to="/properties">
+        <button type="text">My properties</button>
+      </Link>
     </div>
   )
 }

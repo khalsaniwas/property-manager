@@ -11,7 +11,6 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
       onChange={handleChange}
       required
     />
-
     <label>Address</label>
     <input
       placeholder="enter address"
@@ -19,7 +18,6 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
       name="address"
       onChange={handleChange}
     />
-
     <label>Tenant Name</label>
     <input
       placeholder="enter name"

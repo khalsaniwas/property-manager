@@ -20,7 +20,7 @@ const PropertyCreate = props => {
       url: `${apiUrl}/properties`,
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${props.user.token}`
+        Authorization: `Token token=${props.user.token}`
       },
       data: { property }
     })
