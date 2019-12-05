@@ -5,7 +5,7 @@ import apiUrl from '../../apiConfig'
 
 const Property = props => {
   const [property, setProperty] = useState(null)
-  const userId = props.user._id
+  const userId = props.user.id
 
   useEffect(() => {
     axios({ url: `${apiUrl}/properties/${props.match.params.id}`,
@@ -44,7 +44,7 @@ const Property = props => {
       <h5>Lease starts on: {property.lease_start_date}</h5>
       <h5>Lease ends on: {property.lease_end_date}</h5>
       <h5>Rent: ${property.rent}.00</h5>
-      {userId === property.owner && <button onClick={handleDelete}>Delete</button>}
+      {userId === property.user.id && <button onClick={handleDelete}>Delete</button>}
       <Link to={`/properties/${props.match.params.id}/edit`}>
         <button>Update</button>
       </Link>

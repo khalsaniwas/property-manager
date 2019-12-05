@@ -15,7 +15,13 @@ const PropertyUpdate = props => {
   const [edited, setEdited] = useState(false)
 
   useEffect(() => {
-    axios(`${apiUrl}/properties/${props.match.params.id}`)
+    axios({
+      url: `${apiUrl}/properties/${props.match.params.id}`,
+      method: 'GET',
+      headers: {
+        Authorization: `Token token=${props.user.token}`
+      }
+    })
       .then(res => setProperty(res.data.property))
       .catch(console.error)
   }, [])
