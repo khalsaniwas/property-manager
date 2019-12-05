@@ -45,7 +45,7 @@ const Property = props => {
       <Link to={`/properties/${props.match.params.id}/edit`}>
         <button>Update</button>
       </Link>
-      <Link to="/properties/"><button>Back to all properties</button></Link>
+      <Link to="/properties/"><button></button></Link>
     </div>
   )
 }
