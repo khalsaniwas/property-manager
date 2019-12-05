@@ -26,7 +26,7 @@ const Header = ({ user }) => (
   <Navbar bg="dark" variant="dark" expand="md">
     <Navbar.Brand href="#home">
       <img
-        src="../Images/homeIcon2.jpg"
+        src="https://raw.githubusercontent.com/khalsaniwas/property-manager/master/src/images/homeIcon2.jpeg"
         width="50"
         height="50"
         className="d-inline-block align-top"

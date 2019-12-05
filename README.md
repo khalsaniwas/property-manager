@@ -22,7 +22,11 @@ Development tools
 
 
 ## Wireframe diagram
-
+![wireframe diagram](/SRC/images/wireframe1.png)
+![wireframe diagram](/SRC/images/wireframe2.png)
+![wireframe diagram](/SRC/images/wireframe3.png)
+![wireframe diagram](/SRC/images/wireframe4.png)
+![wireframe diagram](/SRC/images/wireframe5.png)
 
 ## Planning
 
