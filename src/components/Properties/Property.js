@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
 
@@ -17,20 +17,6 @@ const Property = props => {
       .then(res => setProperty(res.data.property))
       .catch(console.error)
   }, [])
-
-  const handleUpdate = event => {
-    axios({
-      url: `${apiUrl}/properties/${props.match.params.id}`,
-      method: 'PATCH',
-      headers: {
-        'Authorization': `Bearer ${props.user.token}`
-      }
-    })
-      .then(() => {
-        props.alert({ heading: 'Success', message: 'property updated ', variant: 'warning' })
-        props.history.push('/properties')
-      })
-  }
 
   const handleDelete = event => {
     axios({
@@ -56,7 +42,10 @@ const Property = props => {
       <h6>{property.address}</h6>
       <h6>{property.tenant_name}</h6>
       {userId === property.owner && <button onClick={handleDelete}>Delete</button>}
-      {userId === property.owner && <button onClick={handleUpdate}>Update</button>}
+      <Link to={`/properties/${props.match.params.id}/edit`}>
+        <button>Update</button>
+      </Link>
+      <Link to="/properties/"><button>Back to all properties</button></Link>
     </div>
   )
 }

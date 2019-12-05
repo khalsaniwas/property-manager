@@ -11,6 +11,7 @@ import ChangePassword from '../ChangePassword/ChangePassword'
 import Properties from '../Properties/Properties.js'
 import Property from '../Properties/Property.js'
 import PropertyCreate from '../Properties/PropertyCreate'
+import PropertyUpdate from '../Properties/PropertyUpdate'
 
 class App extends Component {
   constructor () {
@@ -65,6 +66,9 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/create-property' render={() => (
             <PropertyCreate alert={this.alert} user={user}/>
+          )} />
+          <AuthenticatedRoute user={user} path='/properties/:id/edit' render={() => (
+            <PropertyUpdate alert={this.alert} user={user}/>
           )} />
         </main>
       </Fragment>
