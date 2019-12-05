@@ -32,7 +32,7 @@ const PropertyUpdate = props => {
       url: `${apiUrl}/properties/${props.match.params.id}`,
       method: 'PATCH',
       headers: {
-        'Authorization': `Bearer ${props.user.token}`
+        Authorization: `Token token=${props.user.token}`
       },
       data: { property }
     })

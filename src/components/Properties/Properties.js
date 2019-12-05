@@ -13,7 +13,7 @@ const Properties = props => {
       url: `${apiUrl}/properties`,
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${props.user.token}`
+        Authorization: `Token token=${props.user.token}`
       }
     })
       .then(response => {

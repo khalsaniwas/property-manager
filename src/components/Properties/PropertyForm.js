@@ -5,7 +5,7 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
   <form onSubmit={handleSubmit}>
     <label>Name</label>
     <input
-      placeholder="Property Name"
+      placeholder="Property name"
       value={property.name}
       name="name"
       onChange={handleChange}
@@ -14,7 +14,7 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
 
     <label>Address</label>
     <input
-      placeholder="Property Address"
+      placeholder="enter address"
       value={property.address}
       name="address"
       onChange={handleChange}
@@ -22,28 +22,28 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
 
     <label>Tenant Name</label>
     <input
-      placeholder="Tenant Name"
+      placeholder="enter name"
       value={property.tenant_name}
-      name="tenant name"
+      name="tenant_name"
       onChange={handleChange}
     />
     <label>Lease start date</label>
     <input
       placeholder="MM-DD-YYYY"
       value={property.lease_start_date}
-      name="Lease start date"
+      name="lease_start_date"
       onChange={handleChange}
     />
     <label>Lease end date</label>
     <input
       placeholder="MM-DD-YYYY"
       value={property.lease_end_date}
-      name="Lease end date"
+      name="lease_end_date"
       onChange={handleChange}
     />
     <label>Rent</label>
     <input
-      placeholder="Property Rent"
+      placeholder="total rent"
       value={property.rent}
       name="rent"
       onChange={handleChange}

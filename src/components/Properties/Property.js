@@ -23,7 +23,7 @@ const Property = props => {
       url: `${apiUrl}/properties/${props.match.params.id}`,
       method: 'DELETE',
       headers: {
-        'Authorization': `Bearer ${props.user.token}`
+        Authorization: `Token token=${props.user.token}`
       }
     })
       .then(() => {
