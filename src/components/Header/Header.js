@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import logo from '../../images/homeIcon3.png'
+import logo from '../../images/homeIcon2.jpeg'
 
 const authenticatedOptions = (
   <Fragment>
@@ -25,7 +25,7 @@ const alwaysOptions = (
 
 const Header = ({ user }) => (
   <Navbar bg="dark" variant="dark" expand="md">
-    <Navbar.Brand href="#home">
+    <Navbar.Brand href="#/">
       <img
         src={logo}
         width="50"
