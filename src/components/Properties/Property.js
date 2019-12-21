@@ -37,7 +37,7 @@ const Property = props => {
   }
 
   return (
-    <div>
+    <div className="jumbotron text-center">
       <h4>{property.name}</h4>
       <h5>Address: {property.address}</h5>
       <h5>Tenant name: {property.tenant_name}</h5>
@@ -49,7 +49,7 @@ const Property = props => {
         <button>Update</button>
       </Link>
       <Link to="/properties">
-        <button type="text">My properties</button>
+        <button type="text">Back</button>
       </Link>
     </div>
   )
