@@ -16,7 +16,8 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
           required
         />
       </Form.Group>
-
+    </Form.Row>
+    <Form.Row>
       <Form.Group as={Col} controlId="formGridAddress">
         <Form.Label>Address</Form.Label>
         <Form.Control
@@ -38,7 +39,8 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
           onChange={handleChange}
         />
       </Form.Group>
-
+    </Form.Row>
+    <Form.Row>
       <Form.Group as={Col} controlId="formGridLeaseStartDate">
         <Form.Label>Lease start date</Form.Label>
         <Form.Control
@@ -48,7 +50,8 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
           onChange={handleChange}
         />
       </Form.Group>
-
+    </Form.Row>
+    <Form.Row>
       <Form.Group as={Col} controlId="formGridLeaseEndDate">
         <Form.Label>Lease end date</Form.Label>
         <Form.Control
@@ -58,7 +61,8 @@ const PropertyForm = ({ property, handleSubmit, handleChange }) => (
           onChange={handleChange}
         />
       </Form.Group>
-
+    </Form.Row>
+    <Form.Row>
       <Form.Group as={Col} controlId="formGridRent">
         <Form.Label>Rent</Form.Label>
         <Form.Control
