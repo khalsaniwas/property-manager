@@ -12,6 +12,7 @@ import Properties from '../Properties/Properties.js'
 import Property from '../Properties/Property.js'
 import PropertyCreate from '../Properties/PropertyCreate'
 import PropertyUpdate from '../Properties/PropertyUpdate'
+import HomePage from '../HomePage/HomePage.js'
 
 class App extends Component {
   constructor () {
@@ -46,6 +47,9 @@ class App extends Component {
           />
         ))}
         <main className="container">
+          <Route exact path='/' render={() => (
+            <HomePage alert={this.alert} setUser={this.setUser} />
+          )} />
           <Route path='/sign-up' render={() => (
             <SignUp alert={this.alert} setUser={this.setUser} />
           )} />
