@@ -24,7 +24,7 @@ const Properties = props => {
       .catch(console.error)
   }, [])
   const propertiesJsx = properties.map(property => (
-    <ListGroup.Item key={property.id}>
+    <ListGroup.Item variant="light" key={property.id}>
       <Nav.Link href={`#properties/${property.id}`}>{property.name}</Nav.Link>
     </ListGroup.Item>
   ))
@@ -33,10 +33,8 @@ const Properties = props => {
     <div>
       <h1>Properties</h1>
       <Link to="/create-property"><button>Add New Property</button></Link>
-      <ListGroup variant="flush">
-        <ListGroup.Item action variant="info">
-          {propertiesJsx}
-        </ListGroup.Item>
+      <ListGroup>
+        {propertiesJsx}
       </ListGroup>
     </div>
   )
