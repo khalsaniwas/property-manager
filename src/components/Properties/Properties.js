@@ -17,7 +17,6 @@ const Properties = props => {
       }
     })
       .then(response => {
-        console.log(response.data)
         setProperties(response.data.properties)
       })
       .then(() => props.alert({ heading: 'Success', message: 'All your properties', variant: 'success' }))
