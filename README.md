@@ -1,7 +1,5 @@
-## Embedded screenshot
-![Embedded screenshot](/SRC/images/ScreenShot1.png)
-![Embedded screenshot](/SRC/images/ScreenShot2.png)
-![Embedded screenshot](/SRC/images/ScreenShot3.png)
+## App screenshot
+![screenshot](https://i.imgur.com/9Otp7m1.jpg)
 
 ## Property manager (frontend)
 ### Repository link: https://github.com/khalsaniwas/property-manager
@@ -14,15 +12,15 @@
 ### Development site link: http://localhost:4741/
  
 ## Technologies used
-Github
-Git
-React
-Visual studio code
-Terminal
-Development tools
-javaScript
-reactBootStrap
-html
+- Github
+- Git
+- React
+- Visual studio code
+- Terminal
+- Development tools
+- javaScript
+- reactBootStrap
+- html
 
 ## Wireframe diagram
 ![wireframe diagram](/SRC/images/wireframe1.png)
