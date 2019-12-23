@@ -23,11 +23,11 @@
 - html
 
 ## Wireframe diagram
-![wireframe diagram](/SRC/images/wireframe1.png)
-![wireframe diagram](/SRC/images/wireframe2.png)
-![wireframe diagram](/SRC/images/wireframe3.png)
-![wireframe diagram](/SRC/images/wireframe4.png)
-![wireframe diagram](/SRC/images/wireframe5.png)
+![wireframe diagram](https://i.imgur.com/iBuvWZx.png)
+![wireframe diagram](https://i.imgur.com/TtBHsQr.png)
+![wireframe diagram](https://i.imgur.com/xNAzSW6.png)
+![wireframe diagram](https://i.imgur.com/JgZIOOC.png)
+![wireframe diagram](https://i.imgur.com/Fi5OdDm.png)
 
 ## Planning
 As a user I wanted to register multiple properties under my accoun. For my Property manager app I wanted to save property data that can help users manage their properties and keep track of tenants and their lease dates.
