@@ -2,6 +2,10 @@
 ![screenshot](https://i.imgur.com/9Otp7m1.jpg)
 
 ## Property manager (frontend)
+### Description
+
+Property manager is an application build with React.js front end and Ruby on Rails back end. Users can interact with app by signingUp and signingIn. As an authorized users, they can do CRUD action. Users can create/register their properties and can save the information like property name, address, tenant name, lease start/end dates, and rent. This app make it easier for property owners to save all the information on their cell phones through this app and it is always on their finger tips. They do not have to deal with all the physical lease papers.
+
 ### Repository link: https://github.com/khalsaniwas/property-manager
 ### Production site link: https://khalsaniwas.github.io/property-manager/
 ### Development site link: http://localhost:7165/
