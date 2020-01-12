@@ -1,5 +1,5 @@
 ## App screenshot
-![screenshot](https://i.imgur.com/9Otp7m1.jpg)
+![screenshot](https://i.imgur.com/W0hMbSc.png)
 
 ## Property manager (frontend)
 ### Description
