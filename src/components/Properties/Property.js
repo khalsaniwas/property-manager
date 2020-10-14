@@ -7,6 +7,11 @@ const Property = props => {
   const [property, setProperty] = useState(null)
   const userId = props.user.id
 
+  const [flush, setFlush] = useState(props.location.state && props.location.state.flush)
+  if (props.location.state && props.location.state.flush !== flush) {
+    setFlush(true)
+  }
+
   useEffect(() => {
     axios({ url: `${apiUrl}/properties/${props.match.params.id}`,
       method: 'GET',
@@ -15,8 +20,9 @@ const Property = props => {
       }
     })
       .then(res => setProperty(res.data.property))
+      .then(res => setFlush(false))
       .catch(console.error)
-  }, [])
+  }, [flush])
 
   const handleDelete = event => {
     axios({
