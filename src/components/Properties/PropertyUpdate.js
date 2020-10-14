@@ -47,7 +47,10 @@ const PropertyUpdate = props => {
   }
 
   if (edited) {
-    return <Redirect to={`/properties/${props.match.params.id}`} />
+    return <Redirect to={{
+      pathname: `/properties/${props.match.params.id}`,
+      state: { flush: true }
+    }} />
   }
 
   return (
