@@ -13,20 +13,30 @@ import Property from '../Properties/Property.js'
 import PropertyCreate from '../Properties/PropertyCreate'
 import PropertyUpdate from '../Properties/PropertyUpdate'
 import HomePage from '../HomePage/HomePage.js'
+import { withCookies } from 'react-cookie'
 
 class App extends Component {
-  constructor () {
-    super()
-
+  constructor (props) {
+    super(props)
+    const { cookies } = props
+    console.log(cookies.get('user'))
     this.state = {
-      user: null,
-      alerts: []
+      alerts: [],
+      user: cookies.get('user') || null
     }
   }
 
-  setUser = user => this.setState({ user })
+  setUser = user => {
+    const { cookies } = this.props
+    cookies.set('user', user)
+    this.setState({ user })
+  }
 
-  clearUser = () => this.setState({ user: null })
+  clearUser = () => {
+    const { cookies } = this.props
+    cookies.remove('user')
+    this.setState({ user: null })
+  }
 
   alert = ({ heading, message, variant }) => {
     this.setState({ alerts: [...this.state.alerts, { heading, message, variant }] })
@@ -80,4 +90,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default withCookies(App)
